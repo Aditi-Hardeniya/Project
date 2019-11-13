@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ltype: MyString
+  datefrom: 2019-10-24 17:45:16
+  dateto: 2019-10-24 17:45:16
+  days: 1
+  reason: MyText
+  tleaves: 1
+
+two:
+  ltype: MyString
+  datefrom: 2019-10-24 17:45:16
+  dateto: 2019-10-24 17:45:16
+  days: 1
+  reason: MyText
+  tleaves: 1

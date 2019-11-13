@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ <title>LeaveApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <%
+=begin%>
+ <div class="topnav">
+  <a class="active" href="#current_user.email"></a> 
+<%
+=end%>
+  <%
+=begin%>
+ <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a> 
+<%
+=end%>
+</div>
+
+  <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+    <%= yield %>
+  </body>
+</html>

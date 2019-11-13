@@ -1,0 +1,77 @@
+ <p>
+  <strong>leave_Type:</strong>
+  <%= @leave.ltype %>
+</p>
+<p>
+  <strong>Date_From:</strong>
+  <%= @leave.datefrom %>
+</p>
+<p>
+  <strong>Date_To:</strong>
+  <%= @leave.dateto %>
+</p>
+<p>
+  <strong>No_of_Days:</strong>
+  <%= @leave.days %>
+</p>
+<p>
+  <strong>Status:</strong>
+  <%= @leave.status %>
+</p>
+<p>
+  <strong>Total Leaves:</strong>
+  <%=current_user.t_leaves %>
+</p>
+
+<%= link_to "Back", leave_index_path,class: 'button' %> 
+<%
+=begin%>
+ <p>
+  <strong>Title:</strong>
+  <%= @leave.ltype %>
+</p> 
+<%
+=end%>
+<%
+=begin%>
+ <html>
+<h1>Leave Summary</h1>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width:50%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even)  {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Leave Type</th>
+    <th>Total Available</th>
+    <th>Availed</th>
+    <th>Current Available Leaves</th>
+  </tr>
+  <tr>
+    <td>Annual Leave</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</body>
+</html> 
+<%
+=end%>
